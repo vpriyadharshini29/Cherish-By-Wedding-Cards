@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   FaFacebookF,
   FaInstagram,
@@ -23,10 +24,18 @@ const Footer = () => {
           <div className="flex items-center gap-3 mt-4">
             <span className="text-sm font-medium">Follow us with</span>
             <div className="flex gap-3 text-xl text-gray-700">
-              <a href="#"><FaInstagram className="hover:text-amber" /></a>
-              <a href="#"><FaFacebookF className="hover:text-amber" /></a>
-              <a href="#"><FaYoutube className="hover:text-amber" /></a>
-              <a href="#"><FaWhatsapp className="hover:text-amber" /></a>
+              <a href="https://instagram.com" target="_blank" rel="noreferrer">
+                <FaInstagram className="hover:text-amber" />
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noreferrer">
+                <FaFacebookF className="hover:text-amber" />
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noreferrer">
+                <FaYoutube className="hover:text-amber" />
+              </a>
+              <a href="https://wa.me/919876543210" target="_blank" rel="noreferrer">
+                <FaWhatsapp className="hover:text-amber" />
+              </a>
             </div>
           </div>
         </div>
@@ -35,13 +44,13 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold mb-4">Information</h3>
           <ul className="space-y-3 text-[16px]">
-            <li><a href="/aboutus" className="hover:text-amber">About Us</a></li>
-            <li><a href="/contactus" className="hover:text-amber">Contact Us</a></li>
-            <li><a href="/faq" className="hover:text-amber">FAQ</a></li>
+            <li><Link to="/aboutus" className="hover:text-amber">About Us</Link></li>
+            <li><Link to="/contactus" className="hover:text-amber">Contact Us</Link></li>
+            <li><Link to="/faq" className="hover:text-amber">FAQ</Link></li>
             <li>
-              <a href="/howtoorder" className="hover:text-amber">
+              <Link to="/howtoorder" className="hover:text-amber">
                 How to order wedding invitation online?
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -50,9 +59,9 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold mb-4">Quick Access</h3>
           <ul className="space-y-3 text-[16px]">
-            <li><a href="/" className="hover:text-amber">Home</a></li>
-            <li><a href="/weddingcards" className="hover:text-amber">Wedding Cards</a></li>
-            <li><a href="/hinduweddingcards" className="hover:text-amber">Hindu Wedding Cards</a></li>
+            <li><Link to="/" className="hover:text-amber">Home</Link></li>
+            <li><Link to="/weddingcards" className="hover:text-amber">Wedding Cards</Link></li>
+            <li><Link to="/hinduweddingcards" className="hover:text-amber">Hindu Wedding Cards</Link></li>
           </ul>
         </div>
 
