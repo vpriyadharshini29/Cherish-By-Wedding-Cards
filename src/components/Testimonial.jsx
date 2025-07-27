@@ -1,8 +1,8 @@
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
-import jamesImg from '../assets/Images/james.jpg';        // Replace with actual image paths
-import harshithaImg from '../assets/Images/harshitha.jpg';
-import santhoshImg from '../assets/Images/santhosh.jpg';
+import jamesImg from '../assets/images/james.jpg';        // Replace with actual image paths
+import harshithaImg from '../assets/images/harshitha.jpg';
+import santhoshImg from '../assets/images/santhosh.jpg';
 
 const testimonials = [
   {
