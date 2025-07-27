@@ -1,7 +1,7 @@
 import React from "react";
-import beachCard from "../assets/Images/beach-card.png";
-import birdCard from "../assets/Images/bird-card.png";
-import palaceCard from "../assets/Images/palace-card.png";
+import beachCard from "../assets/images/beach-card.png";
+import birdCard from "../assets/images/bird-card.png";
+import palaceCard from "../assets/images/palace-card.png";
 
 const cards = [
   {

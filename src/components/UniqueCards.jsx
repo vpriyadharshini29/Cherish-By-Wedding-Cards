@@ -1,7 +1,7 @@
 import React from "react";
-import beachCard from "../assets/Images/Hindu_wedding_card.png";
-import birdCard from "../assets/Images/luxury_card.png";
-import palaceCard from "../assets/Images/Floral_Indian_wedding_invitation.png";
+import beachCard from "../assets/images/Hindu_wedding_card.png";
+import birdCard from "../assets/images/luxury_card.png";
+import palaceCard from "../assets/images/Floral_Indian_wedding_invitation.png";
 
 const cards = [
   {
