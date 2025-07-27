@@ -8,7 +8,7 @@ import {
   FaRegEnvelope,
 } from "react-icons/fa";
 
-import Logo from "../assets/Images/footer-logo.png"; // adjust path if needed
+import Logo from "../assets/images/footer-logo.png"; // adjust path if needed
 
 const Footer = () => {
   return (
