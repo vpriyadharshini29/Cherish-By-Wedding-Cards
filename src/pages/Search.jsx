@@ -42,49 +42,48 @@ const Search = () => {
 
   return (
     <div className="bg-[#EAE6FA] min-h-screen px-4 py-6">
-      <h1 className="text-center text-xl font-semibold text-gray-800 mb-1">
+    <section className="bg-[#ecebfb] py-10 px-4 md:px-10 text-center">
+      {/* Heading */}
+      <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
         Everything You Need, to Plan your Dream Wedding
-      </h1>
-      <p className="text-center text-sm text-gray-600 mb-6">
+      </h2>
+      <p className="text-gray-600 text-sm md:text-base mb-6">
         Search for vendors, cards, ideas and real wedding stories and more!
       </p>
 
-      <div className="flex flex-wrap items-center justify-center gap-2 mb-4">
-        <button className="bg-yellow-400 text-sm font-semibold text-white px-4 py-1 rounded">
+      {/* Search Bar */}
+      <div className="flex flex-col md:flex-row items-center justify-center gap-4 max-w-3xl mx-auto">
+        <button className="px-6 py-2 rounded-md text-white font-semibold bg-amber-400 border border-amber-500 hover:bg-amber-500 transition">
           All
         </button>
-        {filters.map((tag, idx) => (
-          <span
-            key={idx}
-            className="bg-white text-gray-700 px-3 py-1 rounded-full text-sm shadow-sm border"
-          >
-            {tag}
-          </span>
-        ))}
-      </div>
-
-      <div className="flex justify-center mb-6">
         <input
           type="text"
-          placeholder="Search wedding cards..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full max-w-md px-4 py-2 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring focus:border-blue-300"
+          placeholder="Search"
+          className="w-full md:w-[60%] px-4 py-2 rounded-md border border-gray-400 focus:outline-none text-center font-semibold placeholder-gray-500"
         />
       </div>
 
-      <div className="mb-10">
-        <h2 className="text-lg font-semibold text-gray-800 mb-3">Ideas for you</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-          {ideas.map((item, idx) => (
-            <div key={idx} className="bg-white rounded-lg shadow-sm overflow-hidden">
-              <img src={item.image} alt={item.title} className="w-full h-40 object-cover" />
-              <div className="p-2 text-center text-sm font-medium text-gray-700">{item.title}</div>
-            </div>
-          ))}
-        </div>
+      {/* Tags */}
+      <div className="flex flex-wrap justify-center mt-6 gap-4">
+        {[
+          "Wedding Cards",
+          "Scroll Cards",
+          "Theme Cards",
+          "Birthday Cards",
+          "Engagement Cards",
+        ].map((tag) => (
+          <div
+            key={tag}
+            className="flex items-center bg-white px-4 py-2 rounded-full shadow text-sm font-semibold text-gray-800"
+          >
+            <span className="mr-2">{tag}</span>
+            <button className="text-gray-500 hover:text-red-500 font-bold text-lg">
+              ×
+            </button>
+          </div>
+        ))}
       </div>
-
+    </section>
       <div>
         <h2 className="text-lg font-semibold text-gray-800 mb-3">Popular on this</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">

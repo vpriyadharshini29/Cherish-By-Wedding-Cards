@@ -1,6 +1,7 @@
 import React from 'react';
 
 const cards = [
+
   {
     id: 1,
     title: "Traditional Open-fold Style Hindu Wedding Card",

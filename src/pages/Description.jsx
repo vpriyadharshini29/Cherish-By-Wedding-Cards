@@ -6,6 +6,7 @@ import { useCart } from '../context/CartContext';
 import thumb1 from '../assets/images/thumb1.jpg';
 import thumb2 from '../assets/images/thumb2.jpg';
 import variant from '../assets/images/variant.jpg';
+import WeddingDetailsModal from './WeddingDetailsModal';
 
 const Description = () => {
   const { id } = useParams();
@@ -15,6 +16,7 @@ const Description = () => {
 
   const [product, setProduct] = useState(location.state?.product || null);
   const [quantity, setQuantity] = useState(1);
+const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     if (!product) {
@@ -149,9 +151,17 @@ const Description = () => {
             </div>
           </div>
 
-          <button className="bg-[#FFAB0D] hover:bg-[#f79e05] text-white font-semibold px-6 py-2 rounded-md">
-            The Wedding Details
-          </button>
+         <div className="min-h-screen bg-pink-50 flex flex-col items-center justify-center p-4">
+      <h1 className="text-3xl font-extrabold text-pink-700 mb-6">You're Invited!</h1>
+      <button
+        onClick={() => setShowModal(true)}
+        className="bg-pink-600 text-white px-6 py-2 rounded-lg shadow hover:bg-pink-700 transition duration-200"
+      >
+        Wedding Details
+      </button>
+
+      {showModal && <WeddingDetailsModal onClose={() => setShowModal(false)} />}
+    </div>
         </div>
       </div>
     </div>
