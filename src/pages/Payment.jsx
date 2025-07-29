@@ -107,7 +107,7 @@ const Payment = () => {
 
         <div className="flex justify-between text-sm mb-2">
           <span className="text-orange-500 font-medium">Subtotal</span>
-          <span className="text-orange-500 font-medium">Rs. {totalPrice}</span>
+          <span className="text-orange-500 font-medium">Rs. 54</span>
         </div>
 
         <div className="flex justify-between text-sm mb-6">
@@ -116,7 +116,7 @@ const Payment = () => {
         </div>
 
         <button className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 rounded">
-          Pay Rs.{totalPrice}
+          Pay Rs.64
         </button>
       </div>
     </div>

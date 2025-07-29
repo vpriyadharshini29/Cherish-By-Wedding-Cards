@@ -35,14 +35,14 @@ const Checkout = () => {
               <div className="text-sm font-medium text-gray-800">SKU: QSN0054</div>
               <div className="text-sm text-gray-600">SN (SN 54)</div>
             </div>
-            <div className="font-semibold text-gray-800">Rs. 53.00</div>
+            <div className="font-semibold text-gray-800">Rs. 48.00</div>
           </div>
 
           {/* Summary */}
           <div className="border-t pt-4 text-sm text-gray-700">
             <div className="flex justify-between mb-1">
               <span>Subtotal</span>
-              <span>Rs. 153.40</span>
+              <span>Rs. 48.40</span>
             </div>
             <div className="flex justify-between mb-1">
               <span>Shipping Charge</span>
@@ -59,7 +59,7 @@ const Checkout = () => {
             <hr className="my-2" />
             <div className="flex justify-between font-semibold">
               <span>Total</span>
-              <span>Rs. 148.00</span>
+              <span>Rs. 58.00</span>
             </div>
           </div>
 

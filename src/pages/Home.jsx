@@ -20,7 +20,7 @@ function Home() {
       <UniqueCards />
       <ThemeCards />
       <Hero3 />
-      <SimpleCards />
+    
       <SummerSale />
       <Gallery />
       <Testimonial />

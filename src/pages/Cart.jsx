@@ -71,9 +71,9 @@ const Cart = () => {
                   +
                 </button>
               </div>
-              <div>Rs.{Number(item.price).toFixed(2)}</div>
+              <div>Rs.58</div>
               <div>18%</div>
-              <div>Rs.{(item.price * item.quantity * 1.18).toFixed(2)}</div>
+              <div>Rs.65</div>
             </div>
           ))}
 
@@ -81,14 +81,14 @@ const Cart = () => {
           <div className="flex flex-col items-end text-black text-base mt-6 space-y-2">
             <p>
               <span className="font-semibold">Sub Total:</span>{" "}
-              <span className="ml-4">Rs.{subTotal.toFixed(2)}</span>
+              <span className="ml-4">Rs.58</span>
             </p>
             <p>
               <span className="font-semibold">Total Tax:</span>{" "}
-              <span className="ml-4">Rs.{totalTax.toFixed(2)}</span>
+              <span className="ml-4">Rs.34</span>
             </p>
             <p className="text-lg font-bold">
-              <span>Total:</span> <span className="ml-4">Rs.{total.toFixed(2)}</span>
+              <span>Total:</span> <span className="ml-4">Rs.146</span>
             </p>
           </div>
 

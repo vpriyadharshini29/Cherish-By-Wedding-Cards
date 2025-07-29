@@ -60,10 +60,10 @@ const [showModal, setShowModal] = useState(false);
       <div className="grid lg:grid-cols-2 gap-10">
         {/* Images */}
         <div className="flex flex-col lg:flex-row gap-6">
-          <div className="flex lg:flex-col gap-3 justify-center">
+          {/* <div className="flex lg:flex-col gap-3 justify-center">
             <img src={thumb1} alt="thumb1" className="w-16 h-16 object-cover border" />
             <img src={thumb2} alt="thumb2" className="w-16 h-16 object-cover border" />
-          </div>
+          </div> */}
           <img
             src={product.image}
             alt={product.title}
